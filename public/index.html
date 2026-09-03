@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Shop</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Fruit Shop</h1>
+      <form id="fruit-form">
+        <label for="fruit-name">Fruit</label>
+        <input id="fruit-name" name="fruitName" required autocomplete="off" />
+        <button type="submit">Add fruit</button>
+      </form>
+      <p id="status" role="status"></p>
+      <h2>Your order</h2>
+      <ul id="order-items"></ul>
+      <p id="order-total">Total: GBP 0.00</p>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
