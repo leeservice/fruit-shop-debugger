@@ -17,6 +17,22 @@
       "request": "launch",
       "url": "http://localhost:3000",
       "webRoot": "${workspaceFolder}/public"
+    },
+    {
+      "name": "Debug Vitest Current Test File",
+      "type": "pwa-node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/vitest/vitest.mjs",
+      "args": [
+        "run",
+        "--pool=forks",
+        "--maxWorkers=1",
+        "--no-file-parallelism",
+        "${file}"
+      ],
+      "autoAttachChildProcesses": true,
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
     }
   ]
 }
